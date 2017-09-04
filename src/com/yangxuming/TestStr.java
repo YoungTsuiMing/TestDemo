@@ -4,9 +4,9 @@ public class TestStr {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		StringBuffer sb = new StringBuffer("www.baidu.com\n");
-		sb.append("shit U!");
-		System.out.println(sb);
+		StringBuilder sb= new StringBuilder();
+		sb.append("www.baidu.com!");
+		sb.insert(sb.length(),"fuck you!");
+		System.out.println(sb);	
 	}
-
 }
