@@ -9,11 +9,10 @@ import org.apache.commons.exec.PumpStreamHandler;
 public class TestCommonsExec {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+		ping("121.40.158.33");
 	}
 
-	public String ping(String ip) {
+	public static String ping(String ip) {
 
 		try {
 
@@ -42,11 +41,6 @@ public class TestCommonsExec {
 			return out + error;
 
 		} catch (Exception e) {
-            
-			
-			
-			
-		//	hutools.ogf.error("ping task failed.", e);
 
 			return e.toString();
 
